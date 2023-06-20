@@ -25,17 +25,30 @@
 
       <div class="login">
         <div class="title">
-          <h1>Portal Books</h1>
+          <h1>Cadastre-se</h1>
         </div>
 
         <div class="form-login">
           <form method="post" /*action="http://portalbooks.seutelefonedasorte.com"*/ id="form-login" name="form-login">
-            <p>
-              <label>Usuário</label>
-            </p>
-            <p>
-              <input type="text" name="username" placeholder="Insira o nome de usuário" class="input-form">
-            </p>
+            <div class="nome-sobrenome">
+              <div class="nome">
+                <p>
+                  <label>Primeiro Nome</label>
+                </p>
+                <p>
+                  <input type="text" name="primeiroNome" placeholder="Insira seu primeiro nome" class="input-form-register">
+                </p>
+              </div>
+              
+              <div class="sobrenome">
+                <p>
+                  <label>Último Nome</label>
+                </p>
+                <p>
+                  <input type="text" name="ultimoNome" placeholder="Insira seu último nome" class="input-form-register">
+                </p>
+              </div>
+            </div>
             
             <p>
               <label>Senha</label>
