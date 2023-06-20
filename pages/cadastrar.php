@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="estilos.css" media="screen" />
-  <link rel="icon" type="image/x-icon" href="assets\img\computer-books.svg">
+  <link rel="stylesheet" type="text/css" href="../estilos.css" media="screen" />
+  <link rel="icon" type="image/x-icon" href="../assets\img\computer-books.svg">
 
-  <title>Projeto WEB</title>
+  <title>Cadastrar Usuário</title>
 </head>
 <body>
   <div id="theme" class="theme">
@@ -19,7 +20,7 @@
 
     <div class="corpo">
       <div class="img-computer-books">
-        <img src="assets\img\computer-books.svg" alt="E-books" class="computer-books"/>
+        <img src="../assets/img/register-user.svg" alt="E-books" class="computer-books"/>
       </div>
 
       <div class="login">
@@ -44,10 +45,10 @@
             </p>
 
             <button class="btn btn-primary">Entrar</button>
-          </form>
-            <a href="<?php echo 'pages/cadastrar.php'; ?>">
-              <div id="btn-secondary" class="btn btn-secondary" onclick="btnAwait()">Cadastre-se</div>
+            <a href="#">
+              <button class="btn btn-secondary">Cadastre-se</button>
             </a>
+          </form>
         </div>
       </div>
     </div>
@@ -55,6 +56,6 @@
     <div class="version">Versão 1.0.0.0</div>
   </div>
 
-  <script src="js/scripts.js"></script>
+  <script src="../js/scripts.js"></script>  
 </body>
 </html>
