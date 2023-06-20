@@ -7,6 +7,9 @@ body {
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  background-image: linear-gradient( 360deg, #0F4276, #040109 );
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @keyframes fadeInAnimation {
@@ -20,10 +23,8 @@ body {
 
 /* Botão seleciona tema */
 .theme {
-  /* display: inline-block; */
-  width: 100%;
-  height: 100vw;  
-  background:  linear-gradient( 360deg, #0F4276, #040109 );
+  width: 100vw;
+  height: 100vh;
 }
 .alter-theme {
   width: 98%;
@@ -38,7 +39,7 @@ body {
   width: 40px;
   height: 20px;
 }
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -49,7 +50,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;  
+  bottom: 0;
   right: 6px;
   background:  linear-gradient( 360deg, #0F4276, #040109 );
   -webkit-transition: .4s;
@@ -81,19 +82,29 @@ input:checked + .slider:before {
 }
 
 .corpo {
+  width: 100%;
   margin: 5% 0 0 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
+.img-computer-books {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .computer-books {
   width: 50%;
-  padding: 10px;
+}
+.computer-books:hover {  
+  opacity: 0.5;
+  transition: 0.5s;
 }
 .login {
-  padding: 10px;
-  display: inline-block;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -103,7 +114,7 @@ input:checked + .slider:before {
   margin: 20px 0 40px 0;
 }
 .input-form {
-  width: 90%;
+  width: 89%;
   height: 30px;
   padding: 0 10px;
   margin: 12px 0;
@@ -128,6 +139,10 @@ input:checked + .slider:before {
   margin: 8px 0;
   color: #FFFF;
   font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .btn:hover {
   opacity: 0.5;
@@ -144,7 +159,12 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: center;
 }
-.btn-disable {  
+.link-Register {
+  width: 100%;
+  margin: 20px 0;
+  text-decoration: none;
+}
+.btn-disable {
   width: 100%;
   height: 32px;
   border-radius: 5px;
@@ -161,23 +181,14 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: center;
 }
-
-.nome-sobrenome {
-  display: inline-flex;
+/* Página de cadastro de usuário */
+.dois-campos {
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.input-form-register {  
-  width: 80%;
-  height: 30px;
-  padding: 0 10px;
-  margin: 12px 0;
-  background-color: #adbbea60;
-  color: #FFFF;
-
-  border-radius: 5px;
-  outline: none;
-  border: none;
+.sub-campos {
+  width: 45%;
 }
 
 /* Rodapé */
@@ -192,18 +203,16 @@ input:checked + .slider:before {
   color: #FFFF;
 }
 
-@media screen and (max-width: 1023px) {
-  .img-computer-books {
-    width: 50%;
-  }
-}
+@media screen and (max-width: 1023px) {}
 
 @media screen and (max-width: 430px) {
   .theme {
-    max-height: 100%;
+    height: 100%;
   }
   .corpo {
-    display: inline-block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -213,16 +222,22 @@ input:checked + .slider:before {
     align-items: center;
     justify-content: center;
   }
-  .computer-books {
-    width: 50%;
-  }
   .login {
     width: 100%;
-  }  
-  .btn {
-    width: 95%;
   }
-  .title {    
+  .form-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .link-Register {
+    width: 100%;
+    margin: 20px 0;
+    text-decoration: none;
+  }
+  .title {
     font-size: 14px;
   }
   /* Rodapé */
