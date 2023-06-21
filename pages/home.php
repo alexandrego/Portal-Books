@@ -21,7 +21,7 @@
       </div>
 
       <div class="form-login">
-        <form method="post" /*action="http://portalbooks.seutelefonedasorte.com"*/ id="form-login" name="form-login">
+        <form method="post" action="<?php echo 'logado';?>" id="form-login" name="form-login">
           <p>
             <label>Usuário</label>
           </p>
@@ -36,7 +36,7 @@
             <input type="password" name="password" placeholder="Insira a senha de usuário" class="input-form">
           </p>
 
-          <button class="btn btn-primary">Entrar</button>
+          <button id="btn-wait-login" class="btn btn-primary" onclick="btnAwaitLogin()">Entrar</button>
           
           <a href="<?php echo 'cadastrar'; ?>" class="link-Register">
             <div id="btn-secondary" class="btn btn-secondary" onclick="btnAwait()">Cadastre-se</div>

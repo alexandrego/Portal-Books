@@ -3,3 +3,15 @@ function btnAwait() {
 
   btnStop.innerHTML = `<input type="button" value="Aguarde" disabled class="btn-disable">`;
 }
+
+function btnAwaitLogin() {
+  const btnStop = document.getElementById('btn-wait-login');
+
+  btnStop.innerHTML = `<input type="button" value="Aguarde" disabled class="btn-disable">`;
+}
+
+function waitLogout() {
+  const btnStop = document.getElementById('logout');
+
+  btnStop.innerHTML = `<div class="logout-um"><h1>Saindo...</h1></div>`;
+}
