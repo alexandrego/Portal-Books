@@ -15,3 +15,14 @@ function waitLogout() {
 
   btnStop.innerHTML = `<div class="logout-um"><h1>Saindo...</h1></div>`;
 }
+
+// Botão movimentar slide
+const buttonRight = document.getElementById('slideRight');
+const buttonLeft = document.getElementById('slideLeft');
+
+buttonRight.onclick = function () {
+  document.getElementById('container').scrollLeft += 600;
+};
+buttonLeft.onclick = function () {
+  document.getElementById('container').scrollLeft -= 600;
+};

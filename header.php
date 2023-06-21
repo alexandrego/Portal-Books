@@ -6,6 +6,6 @@
   <link rel="stylesheet" type="text/css" href="estilos.css" media="screen" />
   <link rel="icon" type="image/x-icon" href="assets/img/computer-books.svg">
 
-  <title>Projeto WEB</title>
+  <title>Portal Books</title>
 </head>
 <body>

@@ -38,7 +38,7 @@
 
           <button id="btn-wait-login" class="btn btn-primary" onclick="btnAwaitLogin()">Entrar</button>
           
-          <a href="<?php echo 'cadastrar'; ?>" class="link-Register">
+          <a href="<?php echo 'cadastro-de-leitor'; ?>" class="link-Register">
             <div id="btn-secondary" class="btn btn-secondary" onclick="btnAwait()">Cadastre-se</div>
           </a>
         </form>

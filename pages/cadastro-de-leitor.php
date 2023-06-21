@@ -28,7 +28,7 @@
                   <label>Primeiro Nome</label>
                 </p>
                 <p>
-                  <input type="text" name="primeiroNome" placeholder="Insira seu primeiro nome" class="input-form">
+                  <input type="text" name="primeiroNome" placeholder="Insira seu primeiro nome" class="input-form-sub-campos">
                 </p>
               </div>
               
@@ -37,7 +37,7 @@
                   <label>Último Nome</label>
                 </p>
                 <p>
-                  <input type="text" name="ultimoNome" placeholder="Insira seu último nome" class="input-form">
+                  <input type="text" name="ultimoNome" placeholder="Insira seu último nome" class="input-form-sub-campos">
                 </p>
               </div>
             </div>
@@ -57,7 +57,7 @@
                   <label>Senha</label>
                 </p>
                 <p>
-                  <input type="password" name="password" placeholder="Digite sua senha" class="input-form">
+                  <input type="password" name="password" placeholder="Digite sua senha" class="input-form-sub-campos">
                 </p>
               </div>
               <div class="sub-campos">
@@ -65,7 +65,7 @@
                   <label>Confirme a Senha</label>
                 </p>
                 <p>
-                  <input type="password" name="password" placeholder="Confirme a senha" class="input-form">
+                  <input type="password" name="password" placeholder="Confirme a senha" class="input-form-sub-campos">
                 </p>
               </div>
             </div>

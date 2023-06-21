@@ -3,19 +3,49 @@
 
     <div class="show-icons">
 
-      <a href="#" class="link-icon active">
+    <?php
+      if($url[0] === 'logado'){
+    ?>
+      <img src="assets/icons/house.svg" class="icon active"/>
+    <?php
+      }else{
+    ?>
+      <a href="logado" class="link-icon">
         <img src="assets/icons/house.svg" class="icon"/>
       </a>
+    <?php
+      }
+    ?>
 
-      <a href="#" class="link-icon">
+    <?php
+      if($url[0] === 'biblioteca'){
+    ?>
+      <img src="assets/icons/books.svg" class="icon active"/>
+    <?php
+      }else{
+    ?>
+      <a href="biblioteca" class="link-icon">
         <img src="assets/icons/books.svg" class="icon"/>
       </a>
-      
-      <a href="#" class="link-icon">
+    <?php
+      }
+    ?>
+
+    <?php
+      if($url[0] === 'dados-pessoais'){
+    ?>
+      <img src="assets/icons/faders-horizontal.svg" class="icon active"/>
+    <?php
+      }else{
+    ?>
+      <a href="dados-pessoais" class="link-icon">
         <img src="assets/icons/faders-horizontal.svg" class="icon"/>
       </a>
+    <?php
+      }
+    ?>
       
-      <a href="<?php echo 'home'; ?>" class="link-icon" onclick="waitLogout()">
+      <a href="home" class="link-icon" onclick="waitLogout()">
         <img src="assets/icons/plugs.svg" class="icon"/>
       </a>
     </div>
