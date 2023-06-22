@@ -41,28 +41,93 @@
 
     <div class="ola-user">
       <h3>Meus Livros</h3>
-      <div class="sub-elemento ajusta-mostra-livros">
-        <div class="btn-voltar-avancar">
-          <button id="slideLeft" type="button"><img src="assets/icons/arrow-circle-left.svg" id="slideLeft" class="user-icon" /></button>
-          <!-- <img src="assets/icons/arrow-circle-left.svg" id="slideLeft" class="user-icon" /> -->
-        </div>
+      <div class="sub-elemento">
 
-        <div class="mostra-livros-cadastrados" id="container">          
-          <div class="capa-livro"></div>          
-          <div class="capa-livroS"></div>          
-          <div class="capa-livro"></div>          
-          <div class="capa-livroS"></div>          
-          <div class="capa-livro"></div>          
-          <div class="capa-livroS"></div>          
-          <div class="capa-livro"></div>          
-          <div class="capa-livroS"></div>          
-          <div class="capa-livro"></div>          
-          <div class="capa-livroS"></div>
-        </div>
+        <div class="product">
 
-        <div class="btn-voltar-avancar">
-          <button id="slideRight" type="button"><img src="assets/icons/arrow-circle-right.svg" id="slideRight" class="user-icon" /></button>
-          <!-- <img src="assets/icons/arrow-circle-right.svg" id="slideRight" class="user-icon" /> -->
+          <div class="btn-voltar-avancar">
+            <button class="pre-btn"><img src="assets/icons/arrow-circle-left.svg" alt=""></button>
+          </div>
+
+          <div class="product-container">
+            
+            <div class="product-card">
+              <div class="product-image">
+                  <img src="images/card1.jpg" class="product-thumb" alt="">
+              </div>
+            </div>
+            
+            <div class="product-card">
+              <div class="product-image">
+                  <img src="images/card1.jpg" class="product-thumb" alt="">
+              </div>
+            </div>
+            
+            <div class="product-card">
+              <div class="product-image">
+                  <img src="images/card1.jpg" class="product-thumb" alt="">
+              </div>
+            </div>
+            
+            <div class="product-card">
+              <div class="product-image">
+                  <img src="images/card1.jpg" class="product-thumb" alt="">
+              </div>
+            </div>
+            
+            <div class="product-card">
+              <div class="product-image">
+                  <img src="images/card1.jpg" class="product-thumb" alt="">
+              </div>
+            </div>
+            
+            <div class="product-card">
+              <div class="product-image">
+                  <img src="images/card1.jpg" class="product-thumb" alt="">
+              </div>
+            </div>
+            
+            <div class="product-card">
+              <div class="product-image">
+                  <img src="images/card1.jpg" class="product-thumb" alt="">
+              </div>
+            </div>
+            
+            <div class="product-card">
+              <div class="product-image">
+                  <img src="images/card1.jpg" class="product-thumb" alt="">
+              </div>
+            </div>
+            
+            <div class="product-card">
+              <div class="product-image">
+                  <img src="images/card1.jpg" class="product-thumb" alt="">
+              </div>
+            </div>
+            
+            <div class="product-card">
+              <div class="product-image">
+                  <img src="images/card1.jpg" class="product-thumb" alt="">
+              </div>
+            </div>
+            
+            <div class="product-card">
+              <div class="product-image">
+                  <img src="images/card1.jpg" class="product-thumb" alt="">
+              </div>
+            </div>
+            
+            <div class="product-card">
+              <div class="product-image">
+                  <img src="images/card1.jpg" class="product-thumb" alt="">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="btn-voltar-avancar">
+            <button class="nxt-btn"><img src="assets/icons/arrow-circle-right.svg" alt=""></button>
+          </div>
         </div>
       </div>
     </div>

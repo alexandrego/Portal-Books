@@ -278,7 +278,7 @@ input:checked + .slider:before {
   min-height: 200px;
   /* border: 2px solid #FFFF; */
 }
-.sub-elemento {
+.sub-elemento {  
   width: 100%;
   min-height: 150px;
   border-radius: 5px;
@@ -287,7 +287,6 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 2px solid #FFFF; */
 }
 .sub-elemento-interno {
   width: 80%;
@@ -311,27 +310,6 @@ input:checked + .slider:before {
 
   display: flex;
   align-items: center;
-}
-#slideLeft {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-#slideRight {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-.ajusta-mostra-livros {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.btn-voltar-avancar {
-  margin: 0 10px;
 }
 .capa-livro {  
   border-radius: 4px;
@@ -381,6 +359,80 @@ input:checked + .slider:before {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+/* PRODUCTS */
+.product {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.product-container {
+  padding: 0 10vw;
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 200px;
+  margin-right: 30px;
+}
+
+.product-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.product-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-card:hover .card-btn {
+  opacity: 1;
+}
+
+.pre-btn,
+.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,
+.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
 }
 
 /* Rodapé */
