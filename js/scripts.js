@@ -17,19 +17,24 @@ function waitLogout() {
 }
 
 // Botão movimentar slide
-const productContainers = [...document.querySelectorAll('.product-container')];
-const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
-const preBtn = [...document.querySelectorAll('.pre-btn')];
+const rightButtons = Array.from(document.getElementsByClassName('slideRight'));
+const leftButtons = Array.from(document.getElementsByClassName('slideLeft'));
+const containers = Array.from(document.getElementsByClassName('container'));
 
-productContainers.forEach((item, i) => {
-    let containerDimensions = item.getBoundingClientRect();
-    let containerWidth = containerDimensions.width;
+let index = 0;
+for (const rightButton of rightButtons) {
+    const container = containers[index];
+    rightButton.addEventListener("click", function () {
+        container.scrollLeft += 150;
+    });
+    index++;
+}
 
-    nxtBtn[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth;
-    })
-
-    preBtn[i].addEventListener('click', () => {
-        item.scrollLeft -= containerWidth;
-    })
-})
+index = 0;
+for (const leftButton of leftButtons) {
+    const container = containers[index];
+    leftButton.addEventListener("click", function () {
+        container.scrollLeft -= 150;
+    });
+    index++;
+}

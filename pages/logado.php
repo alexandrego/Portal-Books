@@ -41,94 +41,35 @@
 
     <div class="ola-user">
       <h3>Meus Livros</h3>
-      <div class="sub-elemento">
+      <div class="sub-elemento-slide">
 
-        <div class="product">
-
-          <div class="btn-voltar-avancar">
-            <button class="pre-btn"><img src="assets/icons/arrow-circle-left.svg" alt=""></button>
+        <div class="width-slide">
+          <div class="btn-slideLeft">
+            <button class="slideLeft" type="button"><img src="assets/icons/arrow-circle-left.svg" class="icon-btn-slide"/></button>
           </div>
 
-          <div class="product-container">
-            
-            <div class="product-card">
-              <div class="product-image">
-                  <img src="images/card1.jpg" class="product-thumb" alt="">
-              </div>
+          <div class="container">
+            <div class="content">
+              <div class="capa-livro">1</div>
+              <div class="capa-livroS">2</div>
+              <div class="capa-livro">3</div>
+              <div class="capa-livroS">4</div>
+              <div class="capa-livro">5</div>
+              <div class="capa-livroS">6</div>
+              <div class="capa-livro">7</div>
+              <div class="capa-livroS">8</div>
+              <div class="capa-livro">9</div>
+              <div class="capa-livroS">10</div>
+              <div class="capa-livro">11</div>
+              <div class="capa-livroS">12</div>
             </div>
-            
-            <div class="product-card">
-              <div class="product-image">
-                  <img src="images/card1.jpg" class="product-thumb" alt="">
-              </div>
-            </div>
-            
-            <div class="product-card">
-              <div class="product-image">
-                  <img src="images/card1.jpg" class="product-thumb" alt="">
-              </div>
-            </div>
-            
-            <div class="product-card">
-              <div class="product-image">
-                  <img src="images/card1.jpg" class="product-thumb" alt="">
-              </div>
-            </div>
-            
-            <div class="product-card">
-              <div class="product-image">
-                  <img src="images/card1.jpg" class="product-thumb" alt="">
-              </div>
-            </div>
-            
-            <div class="product-card">
-              <div class="product-image">
-                  <img src="images/card1.jpg" class="product-thumb" alt="">
-              </div>
-            </div>
-            
-            <div class="product-card">
-              <div class="product-image">
-                  <img src="images/card1.jpg" class="product-thumb" alt="">
-              </div>
-            </div>
-            
-            <div class="product-card">
-              <div class="product-image">
-                  <img src="images/card1.jpg" class="product-thumb" alt="">
-              </div>
-            </div>
-            
-            <div class="product-card">
-              <div class="product-image">
-                  <img src="images/card1.jpg" class="product-thumb" alt="">
-              </div>
-            </div>
-            
-            <div class="product-card">
-              <div class="product-image">
-                  <img src="images/card1.jpg" class="product-thumb" alt="">
-              </div>
-            </div>
-            
-            <div class="product-card">
-              <div class="product-image">
-                  <img src="images/card1.jpg" class="product-thumb" alt="">
-              </div>
-            </div>
-            
-            <div class="product-card">
-              <div class="product-image">
-                  <img src="images/card1.jpg" class="product-thumb" alt="">
-              </div>
-            </div>
-
           </div>
 
-          <div class="btn-voltar-avancar">
-            <button class="nxt-btn"><img src="assets/icons/arrow-circle-right.svg" alt=""></button>
+          <div class="btn-slideRight">
+            <button class="slideRight" type="button">Slide right</button>
           </div>
         </div>
+        
       </div>
     </div>
 

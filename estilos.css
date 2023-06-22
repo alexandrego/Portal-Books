@@ -316,7 +316,6 @@ input:checked + .slider:before {
   display: inline-block;
   /* margin-right: 40px;
   margin-left: 2px; */
-  white-space: normal;
 
   -webkit-transition: 0.5s ease-out;
   -moz-transition: 0.5s ease-out;
@@ -324,7 +323,7 @@ input:checked + .slider:before {
   transition: 0.5s ease-out;
 
   width: 95px;
-  min-height: 25vh;
+  min-height: 130px;
   background-color: #0b6a2077;
 }
 .capa-livro:hover{
@@ -344,7 +343,7 @@ input:checked + .slider:before {
   transition: 0.5s ease-out;
 
   width: 95px;
-  min-height: 25vh;
+  min-height: 130px;
   background-color: #0c0a7d77;
 }
 .capa-livroS:hover{
@@ -360,79 +359,52 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: center;
 }
-/* PRODUCTS */
-.product {
-  position: relative;
-  overflow: hidden;
-  padding: 20px;
-}
-
-.product-container {
-  padding: 0 10vw;
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-}
-
-.product-container::-webkit-scrollbar {
-  display: none;
-}
-
-.product-card {
-  flex: 0 0 auto;
-  width: 150px;
-  height: 200px;
-  margin-right: 30px;
-}
-
-.product-image {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.product-thumb {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.product-card:hover .card-btn {
-  opacity: 1;
-}
-
-.pre-btn,
-.nxt-btn {
-  border: none;
-  width: 10vw;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Slide */
+.slideLeft {
   background: transparent;
+  border: none;
+  outline: none;
   cursor: pointer;
-  z-index: 8;
 }
-
-.pre-btn {
-  left: 0;
-}
-
-.nxt-btn {
-  right: 0;
-}
-
-.pre-btn img,
-.nxt-btn img {
+.icon-btn-slide {
+  width: 28px;
   opacity: 0.2;
+  transition: 0.3s;
 }
-
-.pre-btn:hover img,
-.nxt-btn:hover img {
+.icon-btn-slide:hover {
   opacity: 1;
+}
+.container::-webkit-scrollbar {width: 0;}
+.container {overflow: -moz-scrollbars-none; }
+.container {-ms-overflow-style: none; }
+.container {
+  width: 90%;
+  height: 160px;
+  border: 1px solid #ccc;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 10px 0 0 0;
+}
+.content {
+  width: 150%;
+  display: flex;
+  justify-content: space-around;
+}
+.sub-elemento-slide {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #d9d9d93a;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.width-slide {
+  width: 1080px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* Rodapé */
