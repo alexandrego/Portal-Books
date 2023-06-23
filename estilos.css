@@ -368,13 +368,13 @@ input:checked + .slider:before {
 }
 .icon-btn-slide {
   width: 28px;
-  opacity: 0.2;
+  opacity: 0.1;
   transition: 0.3s;
 }
 .icon-btn-slide:hover {
   opacity: 1;
 }
-.container::-webkit-scrollbar {width: 0;}
+.container::-webkit-scrollbar {width: 0; height: 1px;}
 .container {overflow: -moz-scrollbars-none; }
 .container {-ms-overflow-style: none; }
 .container {
