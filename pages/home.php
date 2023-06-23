@@ -23,10 +23,10 @@
       <div class="form-login">
         <form method="post" action="<?php echo 'logado';?>" id="form-login" name="form-login">
           <p>
-            <label>Usuário</label>
+            <label>Usuário ou E-mail</label>
           </p>
           <p>
-            <input type="text" name="username" placeholder="Insira o nome de usuário" class="input-form">
+            <input type="text" name="username" placeholder="Insira o nome de usuário ou email" class="input-form">
           </p>
           
           <p>

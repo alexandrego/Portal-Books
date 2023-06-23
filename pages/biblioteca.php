@@ -14,13 +14,9 @@
 
     <div class="dois-elementos">
 
-      <div class="elemento">
-        <h3>Livros Em Leitura</h3>
-        <div class="sub-elemento">
-          <div class="sub-elemento-interno">
-          </div>
-        </div>
-      </div>
+      <?php
+        include_once 'livros-em-leitura.php';
+      ?>
 
       <div class="elemento">
         <h3>Último Livro Lido</h3>
@@ -38,10 +34,9 @@
 
     </div>
 
-    <div class="ola-user">
-      <h3>Meus Livros</h3>
-      <div class="sub-elemento"></div>
-    </div>
+    <?php
+      include_once 'meus-livros.php';
+    ?>
 
   </div>
 <?php

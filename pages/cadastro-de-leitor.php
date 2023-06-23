@@ -11,7 +11,7 @@
 
     <div class="corpo">
       <div class="img-computer-books">
-        <img src="assets/img/register-user.svg" alt="E-books" class="computer-books"/>
+        <img src="assets/img/register-user.svg" alt="E-books" class="computer-books-register"/>
       </div>
 
       <div class="login">
@@ -50,6 +50,15 @@
                 <input type="text" name="nomeDeUsuario" placeholder="Digite seu nome de usuário" class="input-form">
               </p>
             </div>
+
+            <div class="nome-de-usuario">
+              <p>
+                <label>E-mail</label>
+              </p>
+              <p>
+                <input type="text" name="email" placeholder="Digite seu melhor e-mail" class="input-form">
+              </p>
+            </div>
             
             <div class="dois-campos">
               <div class="sub-campos">
@@ -70,7 +79,7 @@
               </div>
             </div>
 
-            <button class="btn btn-primary">Cadastrar</button>
+            <button id="btn-wait-register" class="btn btn-primary" onclick="btnAwaitRegister()">Cadastrar</button>
 
             <a href="<?php echo 'home'; ?>" class="link-Register">
               <div id="btn-secondary" class="btn btn-secondary" onclick="btnAwait()">Voltar</div>

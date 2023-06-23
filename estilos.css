@@ -102,6 +102,9 @@ input:checked + .slider:before {
 .computer-books {
   width: 50%;
 }
+.computer-books-register {
+  width: 40%;
+}
 .computer-books:hover {  
   opacity: 0.5;
   transition: 0.5s;
@@ -360,11 +363,12 @@ input:checked + .slider:before {
   justify-content: center;
 }
 /* Slide */
-.slideLeft {
+.btn-slideDiv, button {
   background: transparent;
   border: none;
   outline: none;
   cursor: pointer;
+  padding: 0 5px;
 }
 .icon-btn-slide {
   width: 28px;
@@ -380,7 +384,7 @@ input:checked + .slider:before {
 .container {
   width: 90%;
   height: 160px;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   overflow-x: scroll;
   scroll-behavior: smooth;
   padding: 10px 0 0 0;
@@ -405,6 +409,18 @@ input:checked + .slider:before {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+.width-slide-livros-em-leitura {
+  width: 520px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.content-livros-em-leitura {
+  width: 300%;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* Rodapé */

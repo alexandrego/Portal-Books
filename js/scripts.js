@@ -10,10 +10,22 @@ function btnAwaitLogin() {
   btnStop.innerHTML = `<input type="button" value="Aguarde" disabled class="btn-disable">`;
 }
 
+function btnAwaitRegister() {
+  const btnStop = document.getElementById('btn-wait-register');
+
+  btnStop.innerHTML = `<input type="button" value="Aguarde" disabled class="btn-disable">`;
+}
+
 function waitLogout() {
   const btnStop = document.getElementById('logout');
 
   btnStop.innerHTML = `<div class="logout-um"><h1>Saindo...</h1></div>`;
+}
+
+function carregando() {
+  const btnStop = document.getElementById('logout');
+
+  btnStop.innerHTML = `<div class="logout-um"><h1>Carregando...</h1></div>`;
 }
 
 // Botão movimentar slide

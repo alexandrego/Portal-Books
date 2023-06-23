@@ -10,7 +10,7 @@
     <?php
       }else{
     ?>
-      <a href="logado" class="link-icon">
+      <a href="logado" class="link-icon" onclick="carregando()">
         <img src="assets/icons/house.svg" class="icon"/>
       </a>
     <?php
@@ -24,7 +24,7 @@
     <?php
       }else{
     ?>
-      <a href="biblioteca" class="link-icon">
+      <a href="biblioteca" class="link-icon" onclick="carregando()">
         <img src="assets/icons/books.svg" class="icon"/>
       </a>
     <?php
@@ -38,7 +38,7 @@
     <?php
       }else{
     ?>
-      <a href="dados-pessoais" class="link-icon">
+      <a href="dados-pessoais" class="link-icon" onclick="carregando()">
         <img src="assets/icons/faders-horizontal.svg" class="icon"/>
       </a>
     <?php
