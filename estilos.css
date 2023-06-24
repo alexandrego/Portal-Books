@@ -201,6 +201,21 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: center;
 }
+.corpo-dados-pessoais {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px 0 0 0;
+}
+.elemento-dados-pessoais {
+  width: 45%;
+  color: #FFFF;
+}
+.ajusta-temas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 /* Página de cadastro de usuário */
 .dois-campos {
   display: flex;
