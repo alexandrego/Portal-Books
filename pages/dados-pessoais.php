@@ -72,25 +72,36 @@
               </p>
             </div>
           </div>
-
-          <button id="btn-wait-register" class="btn btn-primary" onclick="btnAwaitRegister()">Atualizar</button>
-        </form>
       </div>
 
       <div class="elemento-dados-pessoais">
         <h1>Escolha seu tema</h1>
 
         <div class="ajusta-temas">
+
           <div class="temas">
             <h3>Tema Rosa</h3>
+            <div class="selecionaTema">
+              <img src="assets/img/WomanTheme.svg" class="imgSelecionaTema" />
+              <input type="radio" id="WomanTheme" class="selectTheme" name="selectTheme" value="0">
+            </div>
+
           </div>
 
           <div class="temas">
             <h3>Tema Azul</h3>
+            <div class="selecionaTema">
+              <img src="assets/img/ManTheme.svg" class="imgSelecionaTema"  />
+              <input type="radio" id="ManTheme" class="selectTheme" name="selectTheme" value="1" checked>
+            </div>
           </div>
-        </div>
+
+        </div>  
       </div>
-    </div>
+    </div>    
+
+    <button id="btn-wait-register" class="btn btn-primary spaceButton" onclick="btnAwaitRegister()">Atualizar</button>
+    </form>
 
   </div>
 <?php
