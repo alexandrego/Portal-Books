@@ -238,8 +238,65 @@ input:checked + .slider:before {
   vertical-align: middle;
   margin: 10px 0 0 0;
 }
-.spaceButton {
-  margin: 30px 0 0 0;
+/* Layout página de cadastro de livros */
+.corpo-cadastrar-livro {
+  width: 100%;
+  min-height: 80vh;
+  padding: 10px;
+  border: 1px solid #FFF;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+}
+.corpo-cadastrar-capa-e-titulo {
+  width: 100%;
+  min-height: 30vh;
+
+  border: 1px solid #FFF;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.update-capa-livro {
+  width: 180px;
+  min-height: 250px;
+  background-color: #4f4f4fc4;
+  border-radius: 5px;
+  margin: 5px 0 -5% 0;
+
+  -webkit-box-shadow: 0.8px 0.8px 5px 0.7px #FFFF; 
+  box-shadow: 0.8px 0.8px 5px 0.7px #FFFF;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.img-capa-livro{
+  display: none;
+}
+.adiciona-capa-livro {
+  font-size: 12px;
+  margin: 3px 0 0 0;
+  width: 80%;
+}
+.cadastrar-titulo-e-autor {
+  width: 50%;
+  min-height: 10vh;
+
+  border: 1px solid #FFF;
+}
+.corpo-descricao-cadastrar-livro {
+  width: 100%;
+  min-height: 40vh;
+  border-radius: 5px;
+  background-color: #ffffff6b;
+
+  border: 1px solid #FFF;  
 }
 /* Página de cadastro de usuário */
 .dois-campos {
@@ -288,7 +345,12 @@ input:checked + .slider:before {
   width: 100%;
   min-height: 100vh;
   padding: 30px;
-  /* border: 2px solid #FFFF; */
+  border: 2px solid #FFFF;
+}
+.btn-atualizar-dados-pessoais {
+  width: 20%;
+  padding: 30px 0 0 0;
+  margin: 0 auto;
 }
 .user-name {
   width: 100%;

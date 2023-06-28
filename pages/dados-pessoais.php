@@ -4,18 +4,17 @@
 ?>
   <div id="logout" class="corpo-logado">
 
-    <div class="user-name">
-      <img src="assets/icons/user-circle.svg" class="user-icon" />Admin User
-    </div>
+    <form method="post" action="#" id="form-login" name="form-login">
+      <div class="user-name">
+        <img src="assets/icons/user-circle.svg" class="user-icon" />Admin User
+      </div>
 
-    <div class="ola-user">
-      <h1>Dados Pessoais</h1>
-    </div>
+      <div class="ola-user">
+        <h1>Dados Pessoais</h1>
+      </div>
 
-    <div class="corpo-dados-pessoais">
-      <div class="elemento-dados-pessoais">
-        <form method="post" /*action="http://portalbooks.seutelefonedasorte.com"*/ id="form-login" name="form-login">
-          
+      <div class="corpo-dados-pessoais">
+        <div class="elemento-dados-pessoais">          
           <div class="dois-campos">
             <div class="sub-campos">
               <p>
@@ -72,35 +71,37 @@
               </p>
             </div>
           </div>
-      </div>
+        </div>
 
-      <div class="elemento-dados-pessoais">
-        <h1>Escolha seu tema</h1>
+        <div class="elemento-dados-pessoais">
+          <h1>Escolha seu tema</h1>
 
-        <div class="ajusta-temas">
+          <div class="ajusta-temas">
 
-          <div class="temas">
-            <h3>Tema Rosa</h3>
-            <div class="selecionaTema">
-              <img src="assets/img/WomanTheme.svg" class="imgSelecionaTema" />
-              <input type="radio" id="WomanTheme" class="selectTheme" name="selectTheme" value="0">
+            <div class="temas">
+              <h3>Tema Rosa</h3>
+              <div class="selecionaTema">
+                <img src="assets/img/WomanTheme.svg" class="imgSelecionaTema" />
+                <input type="radio" id="WomanTheme" class="selectTheme" name="selectTheme" value="0">
+              </div>
+
             </div>
 
-          </div>
-
-          <div class="temas">
-            <h3>Tema Azul</h3>
-            <div class="selecionaTema">
-              <img src="assets/img/ManTheme.svg" class="imgSelecionaTema"  />
-              <input type="radio" id="ManTheme" class="selectTheme" name="selectTheme" value="1" checked>
+            <div class="temas">
+              <h3>Tema Azul</h3>
+              <div class="selecionaTema">
+                <img src="assets/img/ManTheme.svg" class="imgSelecionaTema"  />
+                <input type="radio" id="ManTheme" class="selectTheme" name="selectTheme" value="1" checked>
+              </div>
             </div>
-          </div>
 
-        </div>  
+          </div>  
+        </div>
+      </div>    
+
+      <div class="btn-atualizar-dados-pessoais">
+        <button id="btn-wait-register" class="btn btn-primary" onclick="btnAwaitRegister()">Atualizar</button>
       </div>
-    </div>    
-
-    <button id="btn-wait-register" class="btn btn-primary spaceButton" onclick="btnAwaitRegister()">Atualizar</button>
     </form>
 
   </div>
