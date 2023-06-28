@@ -15,12 +15,15 @@
         <form method="post" action="#" id="form-cadastrar-livro" name="form-cadastrar-livro" enctype="multipart/form-data">
           <div class="corpo-cadastrar-capa-e-titulo">
             <div class="update-capa-livro">
-              <img src="assets/icons/cloud-arrow-up.svg" />
+              <label for="adiciona-capa" id="adiciona-capa-livro" class="nuvem-adiciona-capa-livro"><img src="assets/icons/cloud-arrow-up.svg" class="img-update-capa-livro" />Adicionar Capa</label>
 
-              <div class=" adiciona-capa-livro">
+              <!-- <div class=" adiciona-capa-livro">
                 <label for="adiciona-capa" id="adiciona-capa-livro" class="btn btn-primary">Adicionar Capa</label>
-                <input name="img-capa-livro" type="file" id="adiciona-capa" class="img-capa-livro">
-              </div>
+              </div> -->
+              
+              <input name="img-capa-livro" type="file" id="adiciona-capa" class="img-capa-livro" onchange="previewImagem()">
+              <img class="img-capa-livro-css" id="img-capa-livro" >
+
             </div>
             <div class="cadastrar-titulo-e-autor"></div>
           </div>
@@ -39,6 +42,28 @@
     </div>
 
   </div>
+  
+
+  <!-- Carrega preview da imagem de capa a ser carregada -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script>
+    function previewImagem() {
+      const imagem = document.querySelector('input[name=img-capa-livro').files[0];
+      const preview = document.getElementById('img-capa-livro');
+
+      const reader = new FileReader();
+
+      reader.onloadend = function (event) {
+        preview.src = reader.result;
+      }
+
+      if(imagem){
+        reader.readAsDataURL(imagem);
+      }else{
+        preview.src = "Selecione uma Imagem!";
+      }
+    }
+  </script>
 <?php
 include 'footer.php';
 ?>
