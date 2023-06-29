@@ -16,21 +16,31 @@
           <div class="corpo-cadastrar-capa-e-titulo">
             <div class="update-capa-livro">
               <label for="adiciona-capa" id="adiciona-capa-livro" class="nuvem-adiciona-capa-livro"><img src="assets/icons/cloud-arrow-up.svg" class="img-update-capa-livro" />Adicionar Capa</label>
-
-              <!-- <div class=" adiciona-capa-livro">
-                <label for="adiciona-capa" id="adiciona-capa-livro" class="btn btn-primary">Adicionar Capa</label>
-              </div> -->
               
               <input name="img-capa-livro" type="file" id="adiciona-capa" class="img-capa-livro" onchange="previewImagem()">
               <img class="img-capa-livro-css" id="img-capa-livro" >
 
             </div>
-            <div class="cadastrar-titulo-e-autor"></div>
+            <div class="cadastrar-titulo-e-autor">
+              <label>Titulo do Livro</label>
+              <input type="text" name="input-cadastra-titulo-do-livro" placeholder="Insira o titulo do livro" class="input-form-sub-campos">
+
+              <label>Autor</label>
+              <input type="text" name="input-cadastra-autor-do-livro" placeholder="Insira o nome do autor" class="input-form-sub-campos">
+
+            </div>
           </div>
 
           <div class="corpo-descricao-cadastrar-livro">
-            <div class="cadastrar-descricao"></div>
-            <div class="cadastrar-total-de-páginas"></div>
+            <div class="cadastrar-descricao">
+              <label>Descrição</label>
+              <textarea name="textarea" rows="10" cols="50" class="input-form-sub-textarea"></textarea>
+            </div>
+            
+            <div class="cadastrar-total-de-páginas">
+              <label>Quantidade total de páginas</label>
+              <input type="text" name="input-cadastra-autor-do-livro" placeholder="Insira a quantidade total de páginas" class="input-form-sub-campos">
+            </div>
           </div>
 
           <div class="btn-atualizar-dados-pessoais">

@@ -243,7 +243,7 @@ input:checked + .slider:before {
   width: 100%;
   min-height: 80vh;
   padding: 10px;
-  border: 1px solid #FFF;
+  /* border: 1px solid #FFF; */
 
   display: flex;
   flex-direction: column;
@@ -254,7 +254,7 @@ input:checked + .slider:before {
   width: 100%;
   min-height: 30vh;
 
-  border: 1px solid #FFF;
+  /* border: 1px solid #FFF; */
 
   display: flex;
   flex-direction: row;
@@ -266,7 +266,7 @@ input:checked + .slider:before {
   min-height: 250px;
   background-color: #4f4f4fc4;
   border-radius: 5px;
-  margin: 5px 0 -5% 0;
+  margin: 5px 0 -1.8% 0;
 
   -webkit-box-shadow: 0.8px 0.8px 5px 0.7px #FFFF; 
   box-shadow: 0.8px 0.8px 5px 0.7px #FFFF;
@@ -284,7 +284,7 @@ input:checked + .slider:before {
   font-size: 12px;
   opacity: 0.4;
   transition: 1.2s;
-  position: fixed;
+  position: relative;
   z-index: 10;
 
   display: flex;
@@ -312,7 +312,7 @@ input:checked + .slider:before {
   width: 50%;
   min-height: 10vh;
 
-  border: 1px solid #FFF;
+  /* border: 1px solid #FFF; */
 }
 .corpo-descricao-cadastrar-livro {
   width: 100%;
@@ -320,7 +320,39 @@ input:checked + .slider:before {
   border-radius: 5px;
   background-color: #ffffff6b;
 
-  border: 1px solid #FFF;  
+  /* border: 1px solid #FFF; */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.cadastrar-descricao {
+  width: 40%;
+  min-height: 30vh;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+
+  /* border: 1px solid #FFF; */
+}
+.input-form-sub-textarea {
+  row-gap: wrap;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 12px 0 0 0;
+  background-color: #adbbea60;
+  color: #FFFF;
+  outline: none;
+  font-size: 13px;
+}
+.cadastrar-total-de-páginas {
+  width: 40%;
+  min-height: 30vh;
+  border-radius: 5px;
+
+  /* border: 1px solid #FFF; */
 }
 /* Página de cadastro de usuário */
 .dois-campos {
@@ -369,7 +401,7 @@ input:checked + .slider:before {
   width: 100%;
   min-height: 100vh;
   padding: 30px;
-  border: 2px solid #FFFF;
+  /* border: 2px solid #FFFF; */
 }
 .btn-atualizar-dados-pessoais {
   width: 20%;
