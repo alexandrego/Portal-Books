@@ -3,12 +3,16 @@ function btnAwait() {
 
   btnStop.innerHTML = `<input type="button" value="Aguarde" disabled class="btn-disable">`;
 }
+// function btnAwaitLogin() {
+//   const btnStop = document.getElementById('btn-wait-login');
 
-function btnAwaitLogin() {
-  const btnStop = document.getElementById('btn-wait-login');
+//   btnStop.innerHTML = `<input type="button" value="Aguarde" disabled class="btn-disable">`;
+// }
+// function inputAwaitLogin() {
+//   const inputLogin = document.getElementById('btn-wait-login');
 
-  btnStop.innerHTML = `<input type="button" value="Aguarde" disabled class="btn-disable">`;
-}
+//   inputLogin.addEventListener('click', btnAwaitLogin(), false);
+// }
 
 function btnAwaitRegister() {
   const btnStop = document.getElementById('btn-wait-register');
