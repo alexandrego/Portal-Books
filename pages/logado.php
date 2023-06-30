@@ -1,4 +1,6 @@
 <?php
+  include_once 'db/conectadb.php';
+  include('db/verifica-login.php');
   include 'header.php';
   include 'menu.php';
 ?>

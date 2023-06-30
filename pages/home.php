@@ -1,14 +1,9 @@
 <?php
+  session_start();
   include 'header.php';
 ?>
 
 <div id="theme" class="theme">
-  <!-- <div class="alter-theme">
-    <label class="switch">
-      <input type="checkbox" checked>
-      <span class="slider round"></span>
-    </label>
-  </div> -->
 
   <div class="corpo">
     <div class="img-computer-books">
@@ -20,15 +15,20 @@
         <h1>Portal Books</h1>
       </div>
 
-      <div class="form-login">
-        <?php
-          $dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
-
-          if(!empty($dados['Entrar'])){
-            var_dump($dados);
-          }
+      
+      <?php
+        if(isset($_SESSION['nao_autenticado'])):
         ?>
-        <form method="post" action="" id="form-login" name="form-login">
+        <div class="notification is-danger">
+          <p>Usuário ou senha inválidos</p>
+        </div>
+        <?php
+        endif;
+        unset($_SESSION['nao_autenticado']);
+      ?>
+
+      <div class="form-login">
+        <form method="post" action="db/login.php" id="form-login" name="form-login">
           <p>
             <label>Usuário ou E-mail</label>
           </p>

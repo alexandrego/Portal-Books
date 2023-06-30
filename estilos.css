@@ -580,6 +580,22 @@ input:checked + .slider:before {
   display: flex;
   justify-content: space-around;
 }
+.notification {
+  width: 30%;
+  min-height: 50px;
+  font-weight: 600;
+  color: #FFF;
+  margin: -10px 0 10px 0;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.is-danger {
+  background-color: #9b0101d1;
+}
 
 /* Rodapé */
 .version {

@@ -1,3 +1,4 @@
+
 <div class="menu-externo">
   <div class="menu-interno">
 
@@ -45,7 +46,7 @@
       }
     ?>
       
-      <a href="home" class="link-icon" onclick="waitLogout()">
+      <a href="db/logout.php" class="link-icon" onclick="waitLogout()">
         <img src="assets/icons/plugs.svg" class="icon"/>
       </a>
     </div>

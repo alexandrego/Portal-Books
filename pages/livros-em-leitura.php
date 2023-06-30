@@ -1,4 +1,6 @@
-
+<?php
+  include('db/verifica-login.php');
+?>
 
 <div class="elemento">
   <h3>Livros Em Leitura</h3>

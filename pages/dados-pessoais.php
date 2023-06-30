@@ -1,6 +1,7 @@
 <?php
   include 'header.php';
   include 'menu.php';
+  include('db/verifica-login.php');
 ?>
   <div id="logout" class="corpo-logado">
 
