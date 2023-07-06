@@ -1,6 +1,10 @@
 <?php
   session_start();
   include 'header.php';
+
+  // $senha = 123;
+  // $encrypta_senha = password_hash($senha, PASSWORD_DEFAULT);
+  // echo $encrypta_senha;
 ?>
 
 <div id="theme" class="theme">
