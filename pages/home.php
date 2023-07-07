@@ -18,9 +18,9 @@
       <div class="title">
         <h1>Portal Books</h1>
       </div>
-
       
       <?php
+        // Verifica se usuario e senha estão corretos
         if(isset($_SESSION['nao_autenticado'])):
         ?>
         <div class="notification is-danger">
@@ -29,6 +29,17 @@
         <?php
         endif;
         unset($_SESSION['nao_autenticado']);
+
+        // Mostra que o usuario foi cadastrado com sucesso
+        if(isset($_SESSION['leitor_cadastrado_com_sucesso'])):
+        ?>
+        <div class="notification is-sucess">
+          <p>Cadastro realizado com sucesso</p>
+          <p>Faça seu login abaixo</p>
+        </div>
+        <?php
+        endif;
+        unset($_SESSION['leitor_cadastrado_com_sucesso']);
       ?>
 
       <div class="form-login">
